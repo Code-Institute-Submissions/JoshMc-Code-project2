@@ -15,38 +15,38 @@
     
     <h1 class="heading">
         <img class="logo" src="assets/images/logosmall.jpg" alt="logo">
-        <ol>
-            <li>Rock</li>
-            <li>Paper</li>
-            <li>Scissors</li>
-            <li>Lizard</li>
-            <li>Spock</li>
-        </ol>
+        
+            Rock
+            Paper
+            Scissors
+            Lizard
+            Spock
+        
     </h1>
     
     <div class="game-area">
 
         <div class="controls-area">
-            <button data-type="rock" class="btn btn--rock">
-                <img  class="img--btn" src="assets/images/rock.jpg">
+            <button data-type="rock" class="btn btn--big btn--rock">
+            
             </button>
-            <button data-type="paper" class="btn btn--paper">
-                <img class="img--btn" src="assets/images/paper.jpg">
+            <button data-type="paper" class="btn btn--big btn--paper">
+            
             </button>
-            <button data-type="scissors" class="btn btn--scissors">
-                <img class="img--btn" src="assets/images/scissors.jpg">
+            <button data-type="scissors" class="btn btn--big btn--scissors">
+            
             </button>
-            <button data-type="lizard" class="btn btn--lizard">
-                <img class="img--btn" src="assets/images/lizard.jpg">
+            <button data-type="lizard" class="btn btn--big btn--lizard">
+            
             </button>
-            <button data-type="spock" class="btn btn--spock">
-                <img class="img--btn" src="assets/images/spock.jpg">
+            <button data-type="spock" class="btn btn--big btn--spock">
+            
             </button>
         </div>
 
         <div class="results-area">
             <p id="operand1"></p>
-            <p>VS</p>
+            <p id="opeerator">VS</p>
             <p id="operand2"></p>
         </div>
 
@@ -56,6 +56,10 @@
         <p class="scores">Player Score <span id="score">0</span></p>
         <p class="scores">Computer Score <span id="com-score">0</span></p>
 
+    </div>
+
+    <div class="replay">
+        <button data-type="replay" class="btn btn--replay">Click to replay</button>
     </div>
 
     <script src="assets/js/script.js"> </script>   
