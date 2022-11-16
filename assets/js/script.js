@@ -7,25 +7,22 @@ document.addEventListener("DOMContentLoaded", function() {
             replay();
         } else {
             let userChoice = this.getAttribute("data-type");
-            console.log(userChoice);
+            // console.log(userChoice); to check console is logging input// 
             runGame()
-        }   
+        } 
+        let playerScore = 0;
+        let compScore = 0;  
         })
     }
 })
 
-function runGame() {
-    let operand1 = document.getElementById('operand1').innerText;
-    let operand2 = document.getElementById('operand2').innerText;
-};
-
 function generatedAnswer() {
-    let Choice = ["rock","paper","scissors","lizard","spock", "replay"];
+    let choice = ["rock","paper","scissors","lizard","spock", "replay"];
+    let compChoice = ["rock","paper","scissors","lizard","spock"];
     // make sure replay is index 5 so it isnt selected as a response to the game //
     let generatedAnswer = Math.floor(Math.random() * 5);
     
-    let i = generatedAnswer;
-    console.log(Choice[i]);
+    compChoice = (choice[generatedAnswer]);
 }
 
 function compareAnswer() {
