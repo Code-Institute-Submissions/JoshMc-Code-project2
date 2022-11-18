@@ -34,10 +34,20 @@ body {
 }
 
 .results-area {
+    display: flex;
     width: 50%;
     font-size: 2rem;
     margin: auto;
     padding: 20px 0;
+    justify-content: center;
+}
+
+#result {
+    width: 50%;
+    font-size: 2rem;
+    margin: auto;
+    padding: 20px 0;
+    justify-content: center;
 }
 
 .question-area span {
