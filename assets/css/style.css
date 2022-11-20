@@ -141,7 +141,7 @@ body {
 .btn--rock {
     border-color: blue;
     color: blue;
-    background-image: url(./assets/images/rockbtn.png);
+    background-image: url(/assets/images/rockbtn.png);
 
 }
 
@@ -154,7 +154,7 @@ body {
 .btn--paper {
     border-color: orange;
     color: orange;
-    background-image: url(./assets/images/paperbtn.jpg);
+    background-image: url(/assets/images/paperbtn.jpg);
 }
 
 .btn--orange:active,
@@ -166,7 +166,7 @@ body {
 .btn--scissors {
     border-color: red;
     color: red;
-    background-image: url(./assets/images/scissorsbtn.png);
+    background-image: url(/assets/images/scissorsbtn.png);
 }
 
 .btn--red:active,
@@ -178,7 +178,7 @@ body {
 .btn--lizard {
     border-color: green;
     color: green;
-    background-image: url(./assets/images/lizardbtn.png);
+    background-image: url(/assets/images/lizardbtn.png);
 }
 
 .btn--green:active,
@@ -190,7 +190,7 @@ body {
 .btn--spock {
     border-color: purple;
     color: purple;
-    background-image: url(./assets/images/spockbtn.png);
+    background-image: url(/assets/images/spockbtn.png);
 }
 
 .btn--green:active,
