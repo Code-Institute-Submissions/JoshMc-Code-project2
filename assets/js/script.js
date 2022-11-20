@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function() {
             replayGame();
         } else {
            userChoice = this.getAttribute("data-type");
-            // console.log(userChoice); to check console is logging input// 
             generatedAnswer ();
         }   
         });
@@ -40,10 +39,6 @@ function generatedAnswer() {
 
 
 function compareAnswer() {
-
-
-    //document.getElementById("operand1").innerHTML = 'Player'; move to 
-    // document.getElementById("operand2").innerHTML = 'Computer'; move to 
 
 if (userSelected === compSelected){
         operand1.textContent = userSelected;
@@ -130,14 +125,14 @@ function gameOver() {
         chooseMove.innerText = 'Game Over!!';
 
             if(finalPScore > finalCompScore){
-                result.innerText = 'You Won The Game'
+                result.innerText = 'You Won The Game';
                 result.style.color = '#308D46';
-                replayGame()
+                replayGame();
             }
             else{
                 result.innerText = 'You Lost The Game';
                 result.style.color = 'red';
-                replayGame()
+                replayGame();
             };
 }
 

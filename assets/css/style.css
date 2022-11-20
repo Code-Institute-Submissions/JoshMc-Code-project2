@@ -237,16 +237,12 @@ body {
         left: -0.7rem;
     }
 
-    .question-area {
+    .score-area {
         padding: 10% 0;
         width: 100%;
     }
 
-    .question-area span {
-        padding: 0;
-    }
-
-    .answer-message {
+    .score-area {
         display: block;
     }
 
@@ -262,7 +258,7 @@ body {
         width: 100%;
     }
 
-    .scores {
+    .results-area {
         margin: 0.5em auto;
         display: block;
         padding: 5px;
