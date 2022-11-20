@@ -100,6 +100,7 @@ My first issue is with the Javascript:
 - It seems my code will run through a couple of times before breaking and displaying this error message in the console. This bug does not seem to affect the overall performance of the game or website so I have no debugged it as of yet.
 - My second issue is with the button images showing on GitHub Pages:
 - ![CSS bug](https://i.ibb.co/fSJncH3/testing-css-error.jpg) 
+- My images are showing when im viewing my website through GitPod preview however when the page is deployed the issue with the images occurs. This suggests the issue is with GitHub pages and could possibly be resolved from there.
 
 ## Deployment
 
