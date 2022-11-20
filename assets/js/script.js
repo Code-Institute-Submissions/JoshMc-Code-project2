@@ -1,3 +1,4 @@
+// functions to be run when DOM content is loaded //
 document.addEventListener("DOMContentLoaded", function() {
     let buttons = document.getElementsByTagName("button");
     
@@ -15,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
 let playerScore = 0;
 let compScore = 0;
 
-
+//function to generate a number that is then used to generate the computers choice //
 function generatedAnswer() {
     
     let choice = ["rock","paper","scissors","lizard","spock", "replay"];
@@ -37,7 +38,7 @@ function generatedAnswer() {
 }
 
 
-
+// function to compare the users choice against the computers choice //
 function compareAnswer() {
 
 if (userSelected === compSelected){
@@ -106,14 +107,14 @@ if (userSelected === compSelected){
     finalPScore = playerScore;
     finalCompScore = compScore;
     console.log(finalPScore);
-
+// when the user or the computer has a score of 5, run gameOver //
     if(finalPScore == 5 || finalCompScore == 5){
         gameOver();
     }
 }
 
 
-
+// a function to change the site layout and content to the game over phase //
 function gameOver() {
     finalPScore = playerScore;
     finalCompScore = compScore;
@@ -135,7 +136,7 @@ function gameOver() {
                 replayGame();
             };
 }
-
+// a function to allow the replay button to reload the webpage //
 function replayGame() {
     let replayBtn = document.querySelector('.replay');
     replayBtn.addEventListener('click',() => {
