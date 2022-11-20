@@ -4,15 +4,15 @@ document.addEventListener("DOMContentLoaded", function() {
     for (let button of buttons) {
         button.addEventListener("click", function() {
         if (this.getAttribute("data-type") === "replay") {
-            replay();
+            replayGame();
         } else {
            userChoice = this.getAttribute("data-type");
             // console.log(userChoice); to check console is logging input// 
             generatedAnswer ();
         }   
-        })
+        });
     }
-})
+});
 let playerScore = 0;
 let compScore = 0;
 
@@ -54,12 +54,12 @@ if (userSelected === compSelected){
         if(compSelected == 'paper' || compSelected =='spock'){
             result.textContent = 'Computer Wins!';
             ++compScore;
-            console.log(compScore)
+            console.log(compScore);
             
         }else{
            result.textContent = 'Player Wins!';
            ++playerScore;
-           console.log(playerScore)
+           console.log(playerScore);
            document.getElementById("pScore").innerHTML = playerScore;
         }
     }
@@ -67,44 +67,44 @@ if (userSelected === compSelected){
         if(compSelected == 'rock' || compSelected =='spock'){
             result.textContent = 'Computer Wins!';
             ++compScore;
-            console.log(compScore)
+            console.log(compScore);
         }else{
            result.textContent = 'Player Wins!';
            ++playerScore;
-           console.log(playerScore)
+           console.log(playerScore);
         } 
     }
     else if(userSelected == 'paper'){
         if(compSelected == 'scissors' || compSelected =='lizard'){
             result.textContent = 'Computer Wins!';
             ++compScore;
-            console.log(compScore)
+            console.log(compScore);
         }else{
            result.textContent = 'Player Wins!';
            ++playerScore;
-           console.log(playerScore)
+           console.log(playerScore);
         } 
     }
     else if(userSelected == 'lizard'){
         if(compSelected == 'scissors' || compSelected =='rock'){
             result.textContent = 'Computer Wins!';
             ++compScore;
-            console.log(compScore)
+            console.log(compScore);
         }else{
            result.textContent = 'Player Wins!';
            ++playerScore;
-           console.log(playerScore)
+           console.log(playerScore);
         } 
     }
     else if(userSelected == 'spock'){
         if(compSelected == 'lizard' || compSelected =='paper'){
             result.textContent = 'Computer Wins!';
             ++compScore;
-            console.log(compScore)
+            console.log(compScore);
         }else{
            result.textContent = 'Player Wins!';
            ++playerScore;
-           console.log(playerScore)
+           console.log(playerScore);
         } 
     }
 
@@ -126,19 +126,18 @@ function gameOver() {
     console.log(finalCompScore);
     let chooseMove = document.querySelector('.controls-area');
     let result = document.querySelector('.results-area');
-    let replayBtn = document.querySelector('.replay');
 
-        chooseMove.innerText = 'Game Over!!'
+        chooseMove.innerText = 'Game Over!!';
 
             if(finalPScore > finalCompScore){
                 result.innerText = 'You Won The Game'
                 result.style.color = '#308D46';
-                replayGame();
+                replayGame()
             }
-            else if(finalPScore < finalCompScore){
+            else{
                 result.innerText = 'You Lost The Game';
                 result.style.color = 'red';
-                replayGame();
+                replayGame()
             };
 }
 
@@ -147,5 +146,4 @@ function replayGame() {
     replayBtn.addEventListener('click',() => {
         window.location.reload();
     });
-
 }
