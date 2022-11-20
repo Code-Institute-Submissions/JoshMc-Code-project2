@@ -1,108 +1,137 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Rock Paper Scissors Lizard Spock Game
 
-Welcome JoshMc-Code,
+Rock Paper Scissors Lizard Spock Game website is an interactive front end web application which provides an online game with elements of chance. The game can be won by being the first to 5 points. The player will play against the computer. The target audience will be those interested in games of chance. The purpose of this online game will be to provide an enjoyable game tha can be replayed as many times as the user would like. 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![Website preview](https://i.ibb.co/SKTyDhR/sitepic.jpg)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Features 
 
-## Gitpod Reminders
+In this section, you should go over the different parts of your project, and describe each in a sentence or so. You will need to explain what value each of the features provides for the user, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+### Existing Features
 
-`python3 -m http.server`
+- __Clear Layout__
 
-A blue button should appear to click: _Make Public_,
+  - The game has a clear consistent layout and is easy to read and utilise by the user. 
 
-Another blue button should appear to click: _Open Browser_.
+- __Heading and Logo__
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+  - Clearly displays the name of the game with a logo allowing users to clearly identify the site they are using. 
+  
+![Heading and Logo](https://i.ibb.co/CPVmWXW/headinglogo.jpg)
 
-A blue button should appear to click: _Make Public_,
+- __Buttons with Images__
 
-Another blue button should appear to click: _Open Browser_.
+  - The game buttons give clear and easy to understand buttons for each user option in the game. The images will clearly show the options the buttons represent. 
+  - The buttons will have coloured borders to help clearly separate each option. 
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+![Buttons](https://i.ibb.co/3SrMkDt/buttons.jpg))
 
-To log into the Heroku toolbelt CLI:
+- __Results Area__
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+  - Clearly shows the user their own selected choice vs the randomly generated computers choice. 
+  - This allows the user to see whether they have won the round or the computer. 
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+![Results area](https://i.ibb.co/Prw7hfK/results-area.jpg)
 
-------
+- __Score Area__ 
 
-## Release History
+  - The score area shows clearly the player's score against the computer's score. 
+  - This is useful as it shows the user who is currently winning and who is closest to the winning condition of 5 points.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+![Score area](https://i.ibb.co/MN0fWW4/score-area.jpg)
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+- __Replay Button__
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+  - Allows the user to restart the game at any moment. 
+  - This is particularly useful when the game is over and the player wishes to rerun the game. 
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+![Replay Button](https://i.ibb.co/x5hLG46/Replay-button.jpg)
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+### Features Left to Implement
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+-__Round History Button__
+  -A button to show the current game's round history, showing the user choice, the computer choice and the result for each round.
+  This would be useful as the user could see how the game was won or lost.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+-__Help Button__
+  -A button to show the current game's rules and logic in a new page or page alert.
+  -This would be useful as my game is an extension of regular Rock Paper Scissors that some users may not be familar with.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+## Testing 
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+-__Jshint__
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+![Jshint](https://i.ibb.co/3MKhk1V/testing-Jshint.jpg)
+-__W3C__
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+![W3C](https://i.ibb.co/YfPPSft/testing-1.jpg)
+-__Jigsaw__
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+![Jigsaw](https://i.ibb.co/DD5hm1X/testing-2.jpg)
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+Throughout building this website I have been testing my code using different methods. Using Chrome dev tools I have been able to utilise breakpoints and the console tab to check my code at different stages.
+I used the console and breakpoints to test the buttons, results area, score area and replay button
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+![Buttons Console](https://i.ibb.co/b7KKrzP/testing-devtools.jpg)
+![Buttons Breakpoint](https://i.ibb.co/R917rdh/testing-breakpoint-2.jpg)
 
-------
+I then used Chrome dev tools to test how the website would look and function on smaller devices:
+![Smaller Devices](https://i.ibb.co/dt6qjDx/testing-screen-size.jpg)
 
-## FAQ about the uptime script
+### Validator Testing 
 
-**Why have you added this script?**
+- HTML
+  - No errors were returned when passing through the official W3C validator
+  -__W3C__
+  ![W3C](https://i.ibb.co/YfPPSft/testing-1.jpg)
+  
+- CSS
+  - No errors were found when passing through the official Jigsaw validator 
+  -__Jigsaw__
+  - ![Jigsaw](https://i.ibb.co/DD5hm1X/testing-2.jpg)
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+### Unfixed Bugs
 
-**How will this affect me?**
+In this website I have a few unfixed bugs.
+My first issue is with the Javascript:
+- ![JS bug](https://i.ibb.co/SV5z4RQ/testing-js-error.jpg)
+- It seems my code will run through a couple of times before breaking and displaying this error message in the console. This bug does not seem to affect the overall performance of the game or website so I have no debugged it as of yet.
+- My second issue is with the button images showing on GitHub Pages:
+- ![CSS bug](https://i.ibb.co/fSJncH3/testing-css-error.jpg) 
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+## Deployment
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+- The site was deployed to GitHub pages. I had some extra work to do in order to get my project deployed on GitHub pages as my GitPod and GitHub refused to link together meaning I had to manually upload new files to my Github repository. Once this was done the deployment was quite straight forward. The steps to deploy are as follows: 
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+-On GitHub, navigate to your site's repository.
 
-**So….?**
+-Under your repository name, click  Settings.
+Repository settings button
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+-Under the "Code and automation" section of the sidebar, click  Pages.
 
-**Can I opt out?**
+-Under "Build and deployment"  select "Source", select Deploy from a branch.
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+-Under "Build and deployment", under "Branch", select main, then save. 
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+The live link can be found here - (https://joshmc-code.github.io/project2/)
 
-**Anything more?**
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
 
----
 
-Happy coding!
+## Credits 
+
+In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
+
+You can break the credits section up into Content and Media, depending on what you have included in your project. 
+
+### Content 
+HTML and CSS content from CodeInstitute's Love Maths example project has been used and editted to suit my own website.
+
+Some help with the logic of a rock paper scissors game was found in the code from this site: (https://www.geeksforgeeks.org/rock-paper-and-scissor-game-using-javascript/)
+
+### Media
+
+-Photos throughout my project were taken from (https://pixabay.com/) and (https://unsplash.com/)
